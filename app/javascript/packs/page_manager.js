@@ -8,6 +8,7 @@ export default class PageManager {
      window.PageManager.initialize(this.element);
     });
     // this.initializeUser(); USER GREETINGS FROM CONTROLLER
+
   }
 
   // initializeUser(){

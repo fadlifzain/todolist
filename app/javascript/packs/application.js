@@ -12,5 +12,10 @@ console.log('Hello World from Webpacker')
 import PageManager from './page_manager';
 window.PageManager = PageManager;
 
-window.pageManager = window.PageManager(document);
+import SwInitializer from './components/sw_initializer';
+
+window.pageManager = new window.PageManager(document);
 window.pageManager.init();
+
+window.swInitializer = new SwInitializer();
+window.swInitializer.init();
